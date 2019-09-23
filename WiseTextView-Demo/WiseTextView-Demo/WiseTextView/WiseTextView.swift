@@ -44,7 +44,50 @@ class WiseTextView: UIView {
     private var currentTxtH: CGFloat = CGFloat(96) //记录当前输入框的高度
     private var keyboardHeight: CGFloat = 0 //记录键盘的高度
     
-    var subTextView: KMPlaceholderTextView? //文本内容输入视图
+    @IBInspectable @objc private var subTextView: KMPlaceholderTextView? //文本内容输入视图
+    open var font: UIFont? {
+        didSet {
+            subTextView?.font = font
+        }
+    }
+    open var textColor: UIColor? {
+        didSet {
+            subTextView?.textColor = textColor
+        }
+    }
+    open var placeholder: String? {
+        didSet {
+            if placeholder != nil {
+                subTextView?.placeholder = placeholder!
+            }
+        }
+    }
+    open var placeholderColor: UIColor? {
+        didSet {
+            if placeholderColor != nil {
+                subTextView?.placeholderColor = placeholderColor!
+            }
+        }
+    }
+    open var placeholderFont: UIFont? {
+        didSet {
+            subTextView?.placeholderFont = placeholderFont
+        }
+    }
+    open var textAlignment: NSTextAlignment? {
+        didSet {
+            if textAlignment != nil {
+                subTextView?.textAlignment = textAlignment!
+            }
+        }
+    }
+    open var returnKeyType: UIReturnKeyType? {
+        didSet {
+            if returnKeyType != nil {
+                subTextView?.returnKeyType = returnKeyType!
+            }
+        }
+    }
     
     var textValueChangedBlock: ((_ str: String)->(Void))? //文本内容改变回调
     var textBecomeFirstRespnderClouse: (() -> ())? //成为第一响应者
@@ -57,15 +100,9 @@ class WiseTextView: UIView {
         self.cursorMinSpace = cursorSpace
         subTextView = KMPlaceholderTextView(frame: CGRect(x: 0, y: 0, width: self.width, height: self.height))
         subTextView?.backgroundColor = UIColor.clear
-        subTextView?.font = UIFont.systemFont(ofSize: kUIFitSize(size: 16))
-        subTextView?.textColor = kRGBColorFromHex(rgbValue: 0x333333)
         subTextView?.textContainer.lineFragmentPadding = 0 //内容缩进为0（去除左右边距）
         subTextView?.textContainerInset = .zero //文本边距设为0（去除上下边距）
-        subTextView?.layer.borderColor = kRGBColorFromHex(rgbValue: 0x777777).cgColor
-        subTextView?.layer.borderWidth = 0.5
         subTextView?.delegate = self
-        subTextView?.placeholder = "分享此刻新鲜事..."
-        subTextView?.returnKeyType = .done
         subTextView?.isScrollEnabled = false
         subTextView?.layoutManager.allowsNonContiguousLayout = false //是否非连续布局属性,设置为 NO 后 UITextView 就不会再自己重置滑动了。
         self.addSubview(subTextView!)
