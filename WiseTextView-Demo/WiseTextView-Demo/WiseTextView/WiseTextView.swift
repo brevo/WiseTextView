@@ -39,62 +39,60 @@ func kSafeAreaBottomSpace() -> CGFloat {
 }
 
 class WiseTextView: UIView {
-    private var cursorMinSpace = CGFloat(0) //光标高于键盘的最小距离
-    private let minHeightTxt: CGFloat = CGFloat(96) //输入框最小高度
-    private var currentTxtH: CGFloat = CGFloat(96) //记录当前输入框的高度
-    private var keyboardHeight: CGFloat = 0 //记录键盘的高度
+    @objc private var cursorMinSpace = CGFloat(0) //光标高于键盘的最小距离
+    @objc private let minHeightTxt: CGFloat = CGFloat(96) //输入框最小高度
+    @objc private var currentTxtH: CGFloat = CGFloat(96) //记录当前输入框的高度
+    @objc private var keyboardHeight: CGFloat = 0 //记录键盘的高度
     
     @IBInspectable @objc private var subTextView: KMPlaceholderTextView? //文本内容输入视图
-    open var font: UIFont? {
+    @objc open var font: UIFont? {
         didSet {
             subTextView?.font = font
         }
     }
-    open var textColor: UIColor? {
+    @objc open var textColor: UIColor? {
         didSet {
             subTextView?.textColor = textColor
         }
     }
-    open var placeholder: String? {
+    @objc open var placeholder: String? {
         didSet {
             if placeholder != nil {
                 subTextView?.placeholder = placeholder!
             }
         }
     }
-    open var placeholderColor: UIColor? {
+    @objc open var placeholderColor: UIColor? {
         didSet {
             if placeholderColor != nil {
                 subTextView?.placeholderColor = placeholderColor!
             }
         }
     }
-    open var placeholderFont: UIFont? {
+    @objc open var placeholderFont: UIFont? {
         didSet {
             subTextView?.placeholderFont = placeholderFont
         }
     }
-    open var textAlignment: NSTextAlignment? {
+    @objc open var textAlignment: NSTextAlignment {
         didSet {
-            if textAlignment != nil {
-                subTextView?.textAlignment = textAlignment!
-            }
+            subTextView?.textAlignment = textAlignment
         }
     }
-    open var returnKeyType: UIReturnKeyType? {
+    @objc open var returnKeyType: UIReturnKeyType {
         didSet {
-            if returnKeyType != nil {
-                subTextView?.returnKeyType = returnKeyType!
-            }
+            subTextView?.returnKeyType = returnKeyType
         }
     }
     
-    var textValueChangedBlock: ((_ str: String)->(Void))? //文本内容改变回调
-    var textBecomeFirstRespnderClouse: (() -> ())? //成为第一响应者
-    var updateTxtHeightClouse: ((_ height: CGFloat) -> ())? //更新文本视图高度回调
+    @objc var textValueChangedBlock: ((_ str: String)->(Void))? //文本内容改变回调
+    @objc var textBecomeFirstRespnderClouse: (() -> ())? //成为第一响应者
+    @objc var updateTxtHeightClouse: ((_ height: CGFloat) -> ())? //更新文本视图高度回调
     
 
-    init(frame: CGRect, cursorSpace: CGFloat) {
+    @objc public init(frame: CGRect, cursorSpace: CGFloat) {
+        textAlignment = .left
+        returnKeyType = .done
         super.init(frame: frame)
         
         self.cursorMinSpace = cursorSpace
@@ -163,7 +161,7 @@ class WiseTextView: UIView {
 }
 
 extension KMPlaceholderTextView {//在光标位置添加内容
-    func textWithString(nstr: String) {
+    @objc func textWithString(nstr: String) {
         // 1.1 获取当前输入的文字
         let string = self.text
         // 1.2 获取光标位置

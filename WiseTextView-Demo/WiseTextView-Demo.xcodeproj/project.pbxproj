@@ -15,9 +15,19 @@
 		019D11842334BDF30023ABF9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D11802334BDF30023ABF9 /* UIView+Frame.m */; };
 		019D11852334BDF30023ABF9 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D11822334BDF30023ABF9 /* KMPlaceholderTextView.swift */; };
 		019D11862334BDF30023ABF9 /* WiseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D11832334BDF30023ABF9 /* WiseTextView.swift */; };
+		01C0538C2338929900836933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C0538B2338929900836933 /* AppDelegate.m */; };
+		01C0538F2338929900836933 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C0538E2338929900836933 /* ViewController.m */; };
+		01C053922338929900836933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C053902338929900836933 /* Main.storyboard */; };
+		01C053942338929D00836933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C053932338929D00836933 /* Assets.xcassets */; };
+		01C053972338929D00836933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C053952338929D00836933 /* LaunchScreen.storyboard */; };
+		01C0539A2338929D00836933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C053992338929D00836933 /* main.m */; };
+		01C0539F23389D7500836933 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D11822334BDF30023ABF9 /* KMPlaceholderTextView.swift */; };
+		01C053A023389D8800836933 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 019D11802334BDF30023ABF9 /* UIView+Frame.m */; };
+		01C053A123389D8C00836933 /* WiseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D11832334BDF30023ABF9 /* WiseTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0172DBAF2338AFEB00B0E24D /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		01808D3B23337388001B3169 /* WiseTextView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WiseTextView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01808D3E23337388001B3169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01808D4023337388001B3169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,15 +35,32 @@
 		01808D452333738B001B3169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01808D482333738B001B3169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01808D4A2333738B001B3169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01808D5823338DD5001B3169 /* WiseTextView-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiseTextView-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		019D11802334BDF30023ABF9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		019D11812334BDF30023ABF9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		019D11822334BDF30023ABF9 /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		019D11832334BDF30023ABF9 /* WiseTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiseTextView.swift; sourceTree = "<group>"; };
+		01C053882338929900836933 /* objc-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C0538A2338929900836933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01C0538B2338929900836933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01C0538D2338929900836933 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		01C0538E2338929900836933 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		01C053912338929900836933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01C053932338929D00836933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01C053962338929D00836933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01C053982338929D00836933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01C053992338929D00836933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01C0539E2338950600836933 /* objc-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-Demo-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		01808D3823337388001B3169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C053852338929900836933 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				01808D3D23337388001B3169 /* WiseTextView-Demo */,
+				01C053892338929900836933 /* objc-Demo */,
 				01808D3C23337388001B3169 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				01808D3B23337388001B3169 /* WiseTextView-Demo.app */,
+				01C053882338929900836933 /* objc-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +98,7 @@
 				01808D452333738B001B3169 /* Assets.xcassets */,
 				01808D472333738B001B3169 /* LaunchScreen.storyboard */,
 				01808D4A2333738B001B3169 /* Info.plist */,
-				01808D5823338DD5001B3169 /* WiseTextView-Demo-Bridging-Header.h */,
+				0172DBAF2338AFEB00B0E24D /* Demo-Bridging-Header.h */,
 			);
 			path = "WiseTextView-Demo";
 			sourceTree = "<group>";
@@ -83,6 +112,23 @@
 				019D11832334BDF30023ABF9 /* WiseTextView.swift */,
 			);
 			path = WiseTextView;
+			sourceTree = "<group>";
+		};
+		01C053892338929900836933 /* objc-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				01C0538A2338929900836933 /* AppDelegate.h */,
+				01C0538B2338929900836933 /* AppDelegate.m */,
+				01C0538D2338929900836933 /* ViewController.h */,
+				01C0538E2338929900836933 /* ViewController.m */,
+				01C053902338929900836933 /* Main.storyboard */,
+				01C053932338929D00836933 /* Assets.xcassets */,
+				01C053952338929D00836933 /* LaunchScreen.storyboard */,
+				01C053982338929D00836933 /* Info.plist */,
+				01C053992338929D00836933 /* main.m */,
+				01C0539E2338950600836933 /* objc-Demo-Prefix.pch */,
+			);
+			path = "objc-Demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +151,23 @@
 			productReference = 01808D3B23337388001B3169 /* WiseTextView-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		01C053872338929900836933 /* objc-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01C0539D2338929D00836933 /* Build configuration list for PBXNativeTarget "objc-Demo" */;
+			buildPhases = (
+				01C053842338929900836933 /* Sources */,
+				01C053852338929900836933 /* Frameworks */,
+				01C053862338929900836933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "objc-Demo";
+			productName = "objc-Demo";
+			productReference = 01C053882338929900836933 /* objc-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +181,9 @@
 					01808D3A23337388001B3169 = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
+					};
+					01C053872338929900836933 = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
@@ -135,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				01808D3A23337388001B3169 /* WiseTextView-Demo */,
+				01C053872338929900836933 /* objc-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +214,16 @@
 				01808D492333738B001B3169 /* LaunchScreen.storyboard in Resources */,
 				01808D462333738B001B3169 /* Assets.xcassets in Resources */,
 				01808D4423337388001B3169 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01C053862338929900836933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C053972338929D00836933 /* LaunchScreen.storyboard in Resources */,
+				01C053942338929D00836933 /* Assets.xcassets in Resources */,
+				01C053922338929900836933 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +242,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01C053842338929900836933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C0538F2338929900836933 /* ViewController.m in Sources */,
+				01C053A123389D8C00836933 /* WiseTextView.swift in Sources */,
+				01C0539F23389D7500836933 /* KMPlaceholderTextView.swift in Sources */,
+				01C0539A2338929D00836933 /* main.m in Sources */,
+				01C053A023389D8800836933 /* UIView+Frame.m in Sources */,
+				01C0538C2338929900836933 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -180,6 +270,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				01808D482333738B001B3169 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		01C053902338929900836933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01C053912338929900836933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01C053952338929D00836933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01C053962338929D00836933 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -318,7 +424,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brevo.WiseTextView-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WiseTextView-Demo/WiseTextView-Demo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WiseTextView-Demo/Demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,7 +446,51 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brevo.WiseTextView-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WiseTextView-Demo/WiseTextView-Demo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WiseTextView-Demo/Demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		01C0539B2338929D00836933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWBAPFY6HH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objc-Demo/objc-Demo-Prefix.pch";
+				INFOPLIST_FILE = "objc-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brevo.objc-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WiseTextView-Demo/Demo-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01C0539C2338929D00836933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XWBAPFY6HH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "objc-Demo/objc-Demo-Prefix.pch";
+				INFOPLIST_FILE = "objc-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brevo.objc-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/WiseTextView-Demo/Demo-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +513,15 @@
 			buildConfigurations = (
 				01808D4E2333738B001B3169 /* Debug */,
 				01808D4F2333738B001B3169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01C0539D2338929D00836933 /* Build configuration list for PBXNativeTarget "objc-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C0539B2338929D00836933 /* Debug */,
+				01C0539C2338929D00836933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

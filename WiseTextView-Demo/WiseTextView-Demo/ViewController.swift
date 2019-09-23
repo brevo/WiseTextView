@@ -56,6 +56,9 @@ class ViewController: UIViewController {
     }
 
 
+    deinit {
+        debugPrint(#file+"----"+#function)
+    }
 }
 
 extension ViewController: UIScrollViewDelegate {
