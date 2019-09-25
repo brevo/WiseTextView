@@ -26,7 +26,7 @@ Then create `WiseTextView` and set `cursorSpace`.
 - **Implement Swift**:
 
     ```swift
-    et inputView = WiseTextView(frame: CGRect(x: kUIFitSize(size: 16), y: kUIFitSize(size: 10), width: kScreenWidth - kUIFitSize(size: 32), height: kUIFitSize(size: 100)), cursorSpace: CGFloat(20))
+    let inputView = WiseTextView(frame: CGRect(x: kUIFitSize(size: 16), y: kUIFitSize(size: 10), width: kScreenWidth - kUIFitSize(size: 32), height: kUIFitSize(size: 100)), cursorSpace: CGFloat(20))
     ```
     
 Congratulations! You're done. 🎉
